@@ -3,8 +3,17 @@ h1 {
   font-size: 128px;
   font-weight: 800;
   line-height: 161px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  text-align: center;
+}
+
+h2 {
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+
+  text-align: center;
 }
 
 footer {
