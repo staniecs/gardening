@@ -1,19 +1,42 @@
-h1 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 128px;
-  font-weight: 800;
-  line-height: 161px;
-
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
   text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/vegetables.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  color: white;
 }
 
-h2 {
-  font-family: Plus Jakarta Sans;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
+header h1 {
+  font-size: 128px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}
 
-  text-align: center;
+header h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
 }
 
 footer {
