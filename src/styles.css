@@ -2,6 +2,21 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+body {
+  background-color: #192f11;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  width: 100%;
+  grid-gap: 15px;
+}
+
 header {
   text-align: center;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -40,7 +55,41 @@ header a {
 }
 
 footer {
+  background-image: linear-gradient(
+      rgba(25, 47, 17, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../images/vegetables-footer.jpg");
+  color: white;
+  padding: 100px;
+}
+
+footer h3 {
   font-family: "Playfair Display", serif;
+  color: white;
+  opacity: 0.9;
+}
+
+footer p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+  opacity: 0.7;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
 }
 
 /* font-family: "Poppins", sans-serif; */
