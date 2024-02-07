@@ -12,7 +12,7 @@ header {
     url("../images/vegetables.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 0;
+  padding: 150px 0;
   color: white;
 }
 
@@ -44,3 +44,15 @@ footer {
 }
 
 /* font-family: "Poppins", sans-serif; */
+
+@media (max-width: 960px) {
+  header h1 {
+    font-size: 54px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header {
+    padding: 50px;
+  }
+}
