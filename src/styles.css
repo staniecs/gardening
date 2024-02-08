@@ -1,25 +1,34 @@
+body {
+  background-color: #192f11;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
-body {
-  background-color: #192f11;
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 50px;
+}
+.img-responsive {
+  max-width: 100%;
+}
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
 }
 
+.grid-small-lg-lg {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  width: 100%;
-  grid-gap: 15px;
-}
-
 header {
   text-align: center;
-  font-family: "Plus Jakarta Sans", sans-serif;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
@@ -53,7 +62,23 @@ header a {
   border: 1px solid white;
   padding: 5px 10px;
 }
+main {
+  background-color: white;
+}
 
+main h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #192f11;
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h2 {
+  color: #192f11;
+  font-size: 26px;
+}
 footer {
   background-image: linear-gradient(
       rgba(25, 47, 17, 0.9),
@@ -61,7 +86,6 @@ footer {
     ),
     url("../images/vegetables-footer.jpg");
   color: white;
-  padding: 100px;
 }
 
 footer h3 {
@@ -92,8 +116,6 @@ footer a {
   opacity: 0.7;
 }
 
-/* font-family: "Poppins", sans-serif; */
-
 @media (max-width: 960px) {
   header h1 {
     font-size: 54px;
@@ -113,11 +135,19 @@ footer a {
   }
 
   .grid {
-    display: block;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 
   footer p,
   a {
     font-size: 14px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+  section div {
+    padding: 5px;
   }
 }
